@@ -29,3 +29,7 @@
 
 ![image](https://github.com/user-attachments/assets/a29340ea-fe46-4fa8-bf7c-192f83603ff0)
 
+6. Проверяем наличия компилятор в Visual Studio Code. Для Этого по меню Терминал -> Создать Терминал
+Ввести команду GCC --version
+
+![image](https://github.com/user-attachments/assets/bcecee15-59ee-423d-be91-376a76abcbdd)
