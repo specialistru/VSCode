@@ -10,4 +10,22 @@
 
 Ввести команду >Configure Display Language
 
-C/C++ Extension Pack
+![image](https://github.com/user-attachments/assets/df0f223e-c0b1-4e61-978e-581c78f35faa)
+
+Далее выберите "Русский" и перезагрузите Visual Studio Code
+
+![image](https://github.com/user-attachments/assets/02251c4e-b5d8-4ab4-9892-d95e74ed5737)
+
+4. Измените цветомую тему путь по меню файл -> Настройки -> темы -> цветовая тема -> Светлая современная 
+
+![image](https://github.com/user-attachments/assets/5229d792-f55e-42c3-880a-8eaee51300ae)
+
+5. В Расшинериях установить:
+   C/C++
+   C/C++ Extension Pack
+   C/C++ Themes
+   CMake Tools
+   Russian Language Pack for Visual Studio Code
+
+![image](https://github.com/user-attachments/assets/a29340ea-fe46-4fa8-bf7c-192f83603ff0)
+
