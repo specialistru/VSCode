@@ -119,3 +119,84 @@
     ]
 }
 ~~~
+
+Вариант 2
+
+файл tasks.json
+~~~
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe build active file",
+            "command": "C:\\mingw\\w64devkit\\bin\\gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: C:\\mingw\\w64devkit\\bin\\gcc.exe"
+        }
+    ]
+}
+
+~~~
+
+файл launch.json
+~~~
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "gcc.exe build active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\mingw\\w64devkit\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: gcc.exe build active file"
+        }
+    ]
+}
+
+~~~
+
+файл settings.json
+~~~
+{
+    "files.encoding": "utf8",
+    "terminal.integrated.encoding": "utf8",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.fontFamily": "Cascadia Code, Consolas, Courier New, monospace",
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "c": "gcc \"$file\" -o \"$fileDirname\\\\$fileBasenameNoExtension.exe\" && \"$fileDirname\\\\$fileBasenameNoExtension.exe\""
+    }
+}
+
+~~~
