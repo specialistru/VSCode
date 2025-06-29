@@ -6,8 +6,7 @@
 
 ![image](https://github.com/user-attachments/assets/661c8efc-e0e2-485a-8f18-eacab1061b90)
 
-
-4. Установить 
+3. Скачать и установить Visual Studio Code https://code.visualstudio.com/
 
 Ввести команду >Configure Display Language
 
