@@ -21,11 +21,11 @@
 ![image](https://github.com/user-attachments/assets/5229d792-f55e-42c3-880a-8eaee51300ae)
 
 5. В Расшинериях установить:
-   C/C++
-   C/C++ Extension Pack
-   C/C++ Themes
-   CMake Tools
-   Russian Language Pack for Visual Studio Code
+   - C/C++
+   - C/C++ Extension Pack
+   - C/C++ Themes
+   - CMake Tools
+   - Russian Language Pack for Visual Studio Code
 
 ![image](https://github.com/user-attachments/assets/a29340ea-fe46-4fa8-bf7c-192f83603ff0)
 
