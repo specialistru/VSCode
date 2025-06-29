@@ -200,3 +200,22 @@
 }
 
 ~~~
+
+
+8. Создать сниппет для .h файлов
+
+Ввести команду >Preferences: Configure User Snippets
+
+~~~
+"Header Guard": {
+  "prefix": "headerguard",
+  "body": [
+    "#ifndef ${TM_FILENAME_BASE/(.*)/${1:/upper}_H/}",
+    "#define ${TM_FILENAME_BASE/(.*)/${1:/upper}_H/}",
+    "",
+    "",
+    "#endif // ${TM_FILENAME_BASE/(.*)/${1:/upper}_H/}"
+  ],
+  "description": "Insert C/C++ header guard"
+}
+~~~
